@@ -25,7 +25,7 @@ SECRET_KEY = '(r04ngc-xf5-dak(pf5#q$n!41#jhfsmln(#z^gp+vnlai=eb8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','invinciblycool.pythonanywhere.com']
 
 
 # Application definition
