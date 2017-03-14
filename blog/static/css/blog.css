@@ -1,18 +1,20 @@
 h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
+    color: white;
+    font-family: 'Lobster',cursive;
 }
 body {
     padding-left: 15px;
 }
 .page-header {
-    background-color: #ff9400;
+    background-color: #FCA205;
     margin-top: 0;
+    margin-left: -20;
+    margin-right: 50;
     padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: white;
     font-size: 36pt;
     text-decoration: none;
 }
@@ -22,15 +24,15 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Gloria Hallelujah',cursive;
 }
 
 .date {
-    color: #828282;
+    color: grey;
 }
 
 .save {
-    float: right;
+    float: left;
 }
 
 .post-form textarea, .post-form input {
@@ -38,16 +40,28 @@ h1, h2, h3, h4 {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
+    color: #FF0000;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
 }
 
 .post {
+    font-weight: bolder;
     margin-bottom: 70px;
+    font-family: 'Oswald',sans-serif;
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #000000;
+    color: #FF0000;
+    font-family: 'Oswald',sans-serif;
+
+}
+.glyphicon glyphicon-plus{
+    color: red;
+    background-color: orange;
+}
+.intro h3
+{
+    font-family: 'Oswald',sans-serif;
 }

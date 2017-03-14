@@ -1,6 +1,6 @@
-from django impot forms
+from django import forms
 from .models import Post
-class PostForm(froms.ModelForm):
+class PostForm(forms.ModelForm):
 	class Meta:
-	model =Post
-	fields=('title','text',)
+		model =Post
+		fields=('title','text',)

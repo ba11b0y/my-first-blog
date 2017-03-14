@@ -1,13 +1,30 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<a href="{% url 'post_new' %}" class="btn btn-info btn-lg">
+<span class="glyphicon glyphicon-plus"></span>Add a new post 
+</a>
+    <div class="intro">
+    <h3> WELCOME TO THE ULTIMATE CROWD SOURCED SUPERCAR INFORMATION BLOG!!<br></h3>
+    <h5><b>A list of features of this blog:</b></h5>
+    <ul type="disc">
+    <li>Add new cars to our blog.</li>
+    <li>Update information about existing cars</li>
+    </ul>
+    <h4><b>WHAT ARE YOU WAITING FOR,DIVE INTO THE WORLD OF SUPERCARS NOW!!</b></h4>
+    <br>
+    </div>
     {% for post in posts %}
         <div class="post">
-            <div class="date">
+            <h1><a href="{%url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                        <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="{%url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <p>{{ post.text|truncatechars:"30"|linebreaksbr }}....<br>
+            <a href="{%url 'post_detail' pk=post.pk %}">Read more</a></p>
+
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+
         </div>
     {% endfor %}
 {% endblock content %}
