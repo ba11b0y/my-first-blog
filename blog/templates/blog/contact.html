@@ -1,0 +1,14 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Feedback Form</title>
+	</head>
+	<body>
+	<h1>Contact Us</h1>
+	<form  action="." method="post" >
+	{% csrf_token %}
+	<table>{{form.as_table}}</table>
+	<p><input type="submit" value="Submit"></p>
+	</form>
+	</body>
+	</html>
