@@ -18,7 +18,9 @@ body {
     font-size: 36pt;
     text-decoration: none;
 }
-
+.contact h1,.contact span{
+    color: #000000;
+}
 .content {
     margin-left: 40px;
 }

@@ -26,6 +26,14 @@ SECRET_KEY = '(r04ngc-xf5-dak(pf5#q$n!41#jhfsmln(#z^gp+vnlai=eb8'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','invinciblycool.pythonanywhere.com']
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='jprrahultiwari@gmail.com'
+EMAIL_HOST_PASSWORD='rahul786'
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+
+
+
 
 
 # Application definition
